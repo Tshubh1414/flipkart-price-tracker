@@ -1,9 +1,9 @@
 name: Product Price Tracker
 
 on:
+  workflow_dispatch:
   schedule:
-    # GitHub scheduled workflows have a 5-minute minimum interval.
-    - cron: "*/2 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
